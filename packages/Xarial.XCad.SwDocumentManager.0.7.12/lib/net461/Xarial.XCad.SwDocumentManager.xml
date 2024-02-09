@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xarial.XCad.SwDocumentManager</name>
+    </assembly>
+    <members>
+        <member name="T:Xarial.XCad.SwDocumentManager.Exceptions.ConfigurationCutListIsNotSupported">
+            <summary>
+            Exception indicates that cut-lists cannot be exctrated for this version of the SOLIDWORKS file
+            </summary>
+        </member>
+        <member name="T:Xarial.XCad.SwDocumentManager.Services.IFilePathResolver">
+            <summary>
+            Service which provides custom path resolvers
+            </summary>
+        </member>
+        <member name="M:Xarial.XCad.SwDocumentManager.Services.IFilePathResolver.ResolvePath(System.String,System.String)">
+            <summary>
+            Resolves the path of the document
+            </summary>
+            <param name="parentDocPath">Parent document full path</param>
+            <param name="path">Cached document path</param>
+            <returns>Resolved path</returns>
+        </member>
+        <member name="T:Xarial.XCad.SwDocumentManager.Services.SwDmFilePathResolver">
+            <summary>
+            Resolves the reference path for the document
+            </summary>
+            <remarks>This logic implemented according to <see href="https://help.solidworks.com/2016/english/SolidWorks/sldworks/c_Search_Routine_for_Referenced_Documents.htm"/></remarks>
+        </member>
+        <member name="T:Xarial.XCad.SwDocumentManager.SwDmApplicationFactory">
+            <summary>
+            Provides a factory to create instance of the <see cref="T:Xarial.XCad.SwDocumentManager.ISwDmApplication"/>
+            </summary>
+        </member>
+    </members>
+</doc>
